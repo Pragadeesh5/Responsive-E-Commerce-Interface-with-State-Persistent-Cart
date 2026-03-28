@@ -1,0 +1,14 @@
+{
+  "name": "e-commerce-website",
+  "version": "1.0.0",
+  "description": "Full Stack E-Commerce Website",
+  "scripts": {
+    "dev": "concurrently \"cd stylestreet-backend && npm run dev\" \"npx live-server --port=5500\"",
+    "backend": "cd stylestreet-backend && npm run dev",
+    "frontend": "npx live-server --port=5500",
+    "install-all": "cd stylestreet-backend && npm install && cd .. && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
